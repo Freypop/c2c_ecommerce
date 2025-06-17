@@ -1,0 +1,17 @@
+/* Highlight the selected category card */
+.category-card input[type="radio"]:checked + i,
+.category-card input[type="radio"]:checked + i + span {
+    color: #fff !important;
+}
+.category-card input[type="radio"]:checked ~ .text-sm {
+    font-weight: bold;
+}
+.category-card input[type="radio"]:checked ~ * {
+    filter: brightness(1.2);
+}
+.category-card:has(input[type="radio"]:checked) {
+    background-color: #0d6efd !important;
+    color: #fff !important;
+    border-color: #0d6efd !important;
+    box-shadow: 0 0 0 2px #0d6efd33;
+}
